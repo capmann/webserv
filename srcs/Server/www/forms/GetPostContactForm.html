@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>GET POST Form</title>
+	<meta charset="UTF-8">
+    <link rel="icon" href="data:,">
+</head>
+
+	<body>
+		<div>
+			<form action="/srcs/Server/www/forms/GetValuesReceived.html" method="get">
+				<h1>GET</h1>
+					<textarea name="first_name"></textarea>
+					<textarea name="last_name"></textarea>
+				<button type="submit" >Send data with GET request</button>
+			</form>
+			<form action="../cgi-bin/python.py" method="post">
+                
+				<h1>POST</h1>
+					<textarea name="first"></textarea>
+					<textarea name="last"></textarea>
+				<button >Send data with POST request</button>
+
+			</form>
+		</div>
+	</body>
+</html>
